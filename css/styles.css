@@ -49,6 +49,8 @@ h3{
     font-size: 2.2rem;
     font-weight: bold;
 
+
+    
     margin: 0;
     padding: 0;
 }
@@ -194,7 +196,11 @@ nav ul{
     padding: 34px 30px 93px 30px;
 }
 
-.grille article .premier{
+.grille article h3:hover{
+    color: #fff;
+}
+
+.grille article:hover{
     color: white;
     background-color: #E25254;
 }
@@ -203,3 +209,32 @@ nav ul{
     color: #E25254;
     margin-bottom: 24px;
 }
+
+/* Conseils */
+
+.conseils{
+    background-image: url(../images/tuiles.png);
+    background-color: #E25254;
+
+    padding-top: 80px;
+}
+
+.conseils h2{
+    margin-bottom: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 37px;
+
+    margin-top: 40px;
+}
+
+.grid article{
+    display: flex;
+    background-color: white;
+
+    padding: 30px 30px 100px 30px;
+}
+
