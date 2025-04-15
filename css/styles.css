@@ -200,7 +200,7 @@ nav ul{
     color: #fff;
 }
 
-.grille article:hover{
+.grille article:not(h3):hover{
     color: white;
     background-color: #E25254;
 }
@@ -217,10 +217,16 @@ nav ul{
     background-color: #E25254;
 
     padding-top: 80px;
+    padding-bottom: 72px;
 }
 
 .conseils h2{
     margin-bottom: 10px;
+    color: white;
+}
+
+.conseils p{
+    color: white;
 }
 
 .grid{
@@ -236,5 +242,55 @@ nav ul{
     background-color: white;
 
     padding: 30px 30px 100px 30px;
+    
+}
+.grid article p{
+    color: black;
+    margin-bottom: 20px;
+}
+
+.grid article a{
+    margin-left: 193px;
+}
+
+/* Footer */
+
+footer{
+    background-color: #E25254;
+    color: white;
+}
+
+footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    padding: 18px 0 18px 0;
+}
+
+div.modale{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modale .visible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
 }
 
